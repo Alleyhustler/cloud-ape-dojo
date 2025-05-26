@@ -1,0 +1,78 @@
+body {
+    background-color: black;
+    color: rgb(5, 177, 5);
+    text-align: center;
+    justify-content: center;
+    
+}
+@keyframes blink {
+    50% {
+       visibility: hidden;
+    }
+}
+
+.blinking {
+    animation: blink 2s step-start infinite; 
+}
+
+.pulsate {
+    animation: pulsate 2s ease-in-out infinite;
+  }
+  
+  @keyframes pulsate {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+
+}.drift {
+  animation: drift 5s ease-in-out infinite;
+}
+
+@keyframes drift {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  25% {
+    transform: translate(2px, 1px);
+  }
+  50% {
+    transform: translate(-1px, -2px);
+  }
+  75% {
+    transform: translate(1px, 2px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+.blur {
+    animation: blur 5s ease-in-out infinite;
+  }
+  
+  @keyframes blur {
+    0% {
+      filter: blur(0px);
+      transform: translate(0px, 0px);
+    }
+    25% {
+        transform: translate(2px, 1px);
+    }
+    50% {
+      filter: blur(2px);
+      transform: translate(-1px, -2px);
+    }
+    75% {
+        transform: translate(1px, 2px);
+      }
+    100% {
+      filter: blur(0px);
+      transform: translate(0px, 0px);
+    }
+  }

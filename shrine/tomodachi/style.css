@@ -1,0 +1,48 @@
+.content {
+    width: 700px;
+    height:1000px;
+    margin:auto;
+    background: rgb(229, 253, 94);
+    padding: 3px;
+}
+
+.hotelcontent {
+    width: 1000px;
+    height:1000px;
+    margin:auto;
+    background: rgb(108, 86, 47);
+    padding: 5px;
+    color: white;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    overflow: scroll;
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+    
+}
+
+.small img{
+    width: 200px;
+    height: auto;
+}
+
+.box {
+    border:13px rgb(255, 0, 0) solid;
+}
+
+.boxhotel {
+    border:13px rgb(39, 30, 15) solid;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+ body {
+    background-image: url('Island.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}

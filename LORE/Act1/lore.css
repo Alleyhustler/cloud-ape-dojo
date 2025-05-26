@@ -1,0 +1,99 @@
+body {
+    background-color: black;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    justify-content: center;
+    
+}
+
+.inner {
+  color: rgb(6, 192, 6);
+}
+
+.LE {
+  color: rgb(236, 120, 221);
+}
+
+@keyframes blink {
+    50% {
+       visibility: hidden;
+    }
+}
+
+.blinking {
+    animation: blink 2s step-start infinite; 
+}
+
+.pulsate {
+    animation: pulsate 2s ease-in-out infinite;
+  }
+  
+  @keyframes pulsate {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+
+}.drift {
+  animation: drift 7s ease-in-out infinite;
+}
+
+@keyframes drift {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  25% {
+    transform: translate(2px, 1px);
+  }
+  50% {
+    transform: translate(-1px, -2px);
+  }
+  75% {
+    transform: translate(1px, 2px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+.blur {
+    animation: blur 7s ease-in-out infinite;
+  }
+  
+  @keyframes blur {
+    0% {
+      filter: blur(0px);
+      transform: translate(0px, 0px);
+    }
+    25% {
+        transform: translate(2px, 1px);
+    }
+    50% {
+      filter: blur(2px);
+      transform: translate(-1px, -2px);
+    }
+    75% {
+        transform: translate(1px, 2px);
+      }
+    100% {
+      filter: blur(0px);
+      transform: translate(0px, 0px);
+    }
+  }
+  .g-text { color: #000;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(to right, #dfbf57, rgb(255, 73, 200));
+    animation: g-text 0.01s infinite;
+    position: relative;
+  }
+  
+  @keyframes g-text {
+    0% { transform: translateX(0) }
+    50% { transform: translateX(20px) }
+  }

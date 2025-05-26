@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'Windows 95';
+    src: url('w-95-sans-serif.woff2') format('woff2'),
+        url('w-95-sans-serif.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: #273a59; 
+    font-family: 'Windows 95';
+    color: #e3e3e3;
+    margin: 0;
+    padding: 20px;
+}
+
+a {
+  colour: yellow
+}
+
+a:visited {
+  color: pink;
+}

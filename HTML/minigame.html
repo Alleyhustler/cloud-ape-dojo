@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from jaidenle.fun/HTML/minigame by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 26 May 2025 15:45:24 GMT -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MINIGAME</title>
+    <link rel="stylesheet" href="black.css">
+    <link rel="icon" type="image/x-icon" href="../images/Pandemonium.ico">
+</head>
+<body>
+    <audio controls autoplay>
+        <source src="../music/NoLongerNull%20Knock%20Knock.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    
+    <a href="https://open.spotify.com/artist/12xc327EsVjOW5LepkAus5?si=6c07b9faf79b46ee">
+        <small>music is by NoLongerNull, love their music!!!</small>
+    </a>
+
+    <div id="imageContainer"></div>
+
+    <a href="index.html">
+        <img src="../images/PressureDoor.jpg" alt="Door" style="width: 300px; height: auto;">
+    </a>
+
+    <script>
+        const container = document.getElementById('imageContainer');
+        const imageCount = 800; // Adjust this number as needed
+
+        for (let i = 0; i < imageCount; i++) {
+            const img = document.createElement('img');
+            img.src = '../images/Pandemonium.png';
+            img.alt = 'Pandemonium';
+            img.style.width = '500px';
+            img.style.height = 'auto';
+            container.appendChild(img);
+        }
+    </script>
+</body>
+
+<!-- Mirrored from jaidenle.fun/HTML/minigame by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 26 May 2025 15:45:26 GMT -->
+</html>
+

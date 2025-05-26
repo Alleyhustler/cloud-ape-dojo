@@ -1,0 +1,78 @@
+
+#borderimage {
+
+  border: 15px solid transparent;
+  padding: 5px;
+  border-image-source: url(leaf.png);
+  border-image-repeat: round;
+  border-image-slice: 30;
+
+  justify-content: center;
+  width: 1000px;
+  height:1000px;
+  margin:auto;
+  background: rgb(194, 253, 166);
+  padding-bottom: 5px;
+  z-index: 2;
+  text-align: center;
+}
+
+body{
+  background-image: url(images/bg.png);
+}
+
+p{
+    color: rgb(57, 10, 51);
+    font-family: pikmin;
+    font-size: 25px;
+}
+
+@font-face {
+  font-family: 'pikmin';
+  src: url("pikminfont.ttf")
+}
+
+.pikmin{
+  animation-name: pikmin;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+}
+
+.image-reveal-container {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.initial-image, .revealed-image {
+  max-width: 100%;
+  height: auto;
+  transition: opacity 0.3s ease;
+}
+
+.revealed-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  opacity: 0%;
+}
+
+.revealed-image.show {
+  opacity: 1;
+  pointer-events: auto;
+  opacity: 0%;
+}
+
+.initial-image.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+}

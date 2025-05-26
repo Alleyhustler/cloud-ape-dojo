@@ -1,0 +1,35 @@
+
+body {
+  background-image: url("../200w.gif");
+  background-attachment: fixed;
+  background-repeat: repeat;
+  color: White;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  margin: 0;
+  padding: 20px;
+}
+
+a {
+  color: NavajoWhite;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0;
+  justify-content: start;
+}
+
+.box {
+  background-color: rgba(44, 29, 42, 0.474);
+  border: 15px solid transparent;
+  border-image: url('images/puter.html') 30 round;
+  padding: 20px;
+  text-align: left;
+}
+
+.header {
+  grid-column: 1 / -1;
+}

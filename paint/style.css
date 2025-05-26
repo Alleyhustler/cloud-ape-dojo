@@ -1,0 +1,36 @@
+body{
+    background-color: rgb(189, 189, 189);
+}
+
+p{
+    font-family: paintfont;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #ffffff;
+  }
+
+  @font-face {
+    font-family: 'paintfont';
+    src: url("paintfont.ttf")
+  }
+
+  .container {
+    display: grid;
+    justify-content: left;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+  }
+
+  .container > div {
+    background-color: #f1f1f1;
+    border: 1px solid black;
+    padding: 5px;
+    font-size: 30px;
+    text-align: left;
+  }
+
+  body {
+    background-image: url("bg.jpg");
+  }

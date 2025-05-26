@@ -1,0 +1,337 @@
+body {
+    background: #f7d5f7 url("bg.jpg"); 
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: "VT-100", fixedsys, System, monospace;
+    font-size: 13px;
+}
+
+html, body {
+    cursor: url("images/cursor.ico"), default;
+}
+
+  img[src="images/LE_OC.png"] {
+  position: fixed;
+  top: 50%;
+  right: 50%;
+  transform: translate(30%, -50%);
+  width: 400px;
+  height: auto;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.HBWR img{
+ width: 130px;
+height: auto;
+}
+ 
+  center {
+    text-align: center;
+    }
+    
+  a {
+    color: #3c5832;
+    }
+
+    .hidemobile {
+      display: inline;
+    }
+  
+    @media (max-width: 1024px) {
+      .hidemobile {
+        display: none;
+      }
+    }
+  
+  /*All sidebars go in here.*/  
+  .sidebar-group {
+    position:absolute;
+    top: 0;
+    margin-top: 25px;
+    }
+    
+  /*All window boxes go in here.*/
+  .sidebar, .mini-sidebar, .wide-sidebar, .box {
+    background: #f2c5ef;
+    border-radius: 5px;
+    border: 1px solid #b167a7;
+    box-shadow: 2px 2px #aa1396;
+    }
+    
+  /*Prevent image overflow.*/
+  .sidebar img, .mini-sidebar img, .wide-sidebar img, .box img {
+    max-width: 100%;
+    height:auto; /*Prevent squishing*/
+    }
+    
+  .sidebar, .sidebar-box {
+    display: inline-block;
+    vertical-align: top;
+    width: 160px;
+    }
+    
+  /*Container for vertical stacks of multiple mini-sidebars*/
+  .sidebar-box {
+    margin-left: 10px;
+    }
+    
+  .sidebar {
+    width: 160px;
+    margin-left: 5px;
+    }
+    
+  .mini-sidebar {
+    margin-bottom: 25px;
+    margin-top: 20px;
+    }
+    
+  .wide-sidebar {
+    margin-left: 25px;
+    margin-top: 25px;
+    width: 340px;
+    min-height: 150px;
+    overflow-y: auto; /* Add this line to make the sidebar scrollable */
+    max-height: 30vh; /* Add this line to set the maximum height of the sidebar */
+    padding-bottom: 50px;
+    }
+    /* Small devices (landscape phones, 576px and up) */
+
+@media (max-width: 576px) {
+  .wide-sidebar {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .wide-sidebar {
+    width: 250px;
+    padding: 15px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .wide-sidebar {
+    width: 300px;
+    padding: 20px;
+  }
+}
+    
+  /*Inside/main text of window boxes.*/
+  .inner {
+    padding: 10px;
+    padding-bottom: 5px;
+    padding-top: 0px;
+    overflow-wrap: break-word;
+    }
+  
+  /*The title bar at the top of window boxes.*/
+  .title-bar, .box-title-bar {
+    background: #84aee2;
+    color: rgb(46, 46, 46);
+    font-weight: bold;
+    padding: 5px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    }
+    
+  /*The title bar of boxes has slightly more padding, since there's more room to space text.*/
+  .box-title-bar {
+    padding: 7px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    }
+    
+  /*For the symbol in the top right corner.*/
+  .right {
+    float: right;
+    margin-right: 5px;
+    font-family: "Arial", sans-serif;
+    line-height: 12px;
+    }
+    
+  /*Round circular image.*/
+  .icon {
+    border: #80aa6f solid 2px;
+    border-radius: 50%;
+    }
+  
+  .boxmobileonly {
+    margin-top: 25px;
+    margin-left: 10px;
+    width: 455px;
+    margin-bottom: 25px;
+    text-align: center;
+    display: none;
+    }
+  
+  @media (max-width: 768px) {
+    .boxmobileonly {
+      display: block;
+      margin-left: 10px;
+      width: 95%;
+    }
+  }
+    
+  /*Main body text boxes.*/
+  .box {
+    margin-top: 25px;
+    margin-left: 10px;
+    width: 455px;
+    margin-bottom: 25px;
+    text-align: center;
+    }
+    
+    @media (max-width: 1200px) {
+      .box {
+        margin-left: 20px;
+        width: 90%;
+      }
+    }
+    
+    @media (max-width: 768px) {
+      .box {
+        margin-left: 10px;
+        width: 95%;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .sidebar-group {
+        display: flex;
+        flex-direction: column;
+      }
+      .wide-sidebar {
+        order: 2;
+      }
+      .box {
+        order: 1;
+      }
+    }
+    
+  /*this part is a joke. no need to use it.*/
+  .big-quote {
+    font-size: 32px;
+    color: #3c5832;
+    letter-spacing: 6px;
+    word-spacing: 2px;
+    font-family: "Garamond", "Bookman", serif;
+    position: fixed;
+    margin-left: 700px;
+    margin-top: 300px;
+    top: 0;
+    width: 300px;
+    }
+
+    @media (max-width: 768px) {
+      .big-quote {
+        display: none;
+      }
+    }
+    
+  wide {
+    letter-spacing: 16px;
+    }
+    
+  midwide {
+    letter-spacing: 3px;
+    }
+
+    @media (max-width: 576px) {
+      body {
+        font-size: 16px;
+      }
+    }
+
+    .buttonscary {
+      height: 3em;
+      width: 8em;
+      border: none;
+      border-radius: 3em;
+      background: #000000;
+      font-size: 17px;
+      color: #757575;
+      font-family: inherit;
+      font-weight: 500;
+     }
+     
+     .buttonscary:hover {
+      animation: shake3856 0.3s linear infinite both;
+     }
+     
+     @keyframes shake3856 {
+      0% {
+       -webkit-transform: translate(0);
+       transform: translate(0);
+      }
+     
+      20% {
+       -webkit-transform: translate(-2px, 2px);
+       transform: translate(-2px, 2px);
+      }
+     
+      40% {
+       -webkit-transform: translate(-2px, -2px);
+       transform: translate(-2px, -2px);
+      }
+     
+      60% {
+       -webkit-transform: translate(2px, 2px);
+       transform: translate(2px, 2px);
+      }
+     
+      80% {
+       -webkit-transform: translate(2px, -2px);
+       transform: translate(2px, -2px);
+      }
+     
+      100% {
+       -webkit-transform: translate(0);
+       transform: translate(0);
+      }
+     }
+
+     .button-cute {
+      background-color: #ffb7c5;
+      border: none;
+      padding: 6px 12px;
+      font-family: "MS Sans Serif", "Segoe UI", Tahoma, sans-serif;
+      font-size: 14px;
+      color: black;
+      box-shadow: 
+        inset -1px -1px 0 0 #800040,
+        inset 1px 1px 0 0 #ffffff,
+        inset -2px -2px 0 0 #c06080,
+        inset 2px 2px 0 0 #ffe4e1;
+      position: relative;
+      cursor: pointer;
+    }
+    
+    .button-cute:active {
+      box-shadow: 
+        inset 1px 1px 0 0 #800040,
+        inset -1px -1px 0 0 #ffffff,
+        inset 2px 2px 0 0 #c06080,
+        inset -2px -2px 0 0 #ffe4e1;
+      padding: 7px 11px 5px 13px;
+    }
+    
+    .oclol {
+    pointer-events: none;
+}
+
+.oclol img {
+    pointer-events: auto;
+    transition: all 0.1s ease;
+    z-index: 9999;
+}
+
+#dvd {
+  position: absolute;
+  width: 150px;
+  height: auto;
+}
